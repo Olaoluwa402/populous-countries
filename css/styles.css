@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;700&display=swap');
+:root{
+    --dark:#000;
+    --light:#fff;
+    --yellow:#f2a93b;
+    --offWhite:#eeeff0;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+  overflow-x:hidden;
+    font-family: 'Raleway', sans-serif;
+    background-color: var(--offWhite);
+}
+
+/* global */
+ul{
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+button{
+    outline: none;
+}
+img{
+    width: 100%;
+}
+
+/* End of global */
+
+.container{
+    width: 100vw;
+    height: 100vh;
+}
+
+.header{
+    text-align: center;
+}
+
+.header h1{
+  color: var(--yellow);
+  margin-top: 30px;
+}
+
+.header h5{
+    margin-bottom: 10px;
+}
+
+.hr{
+    color: var(--yellow);
+}
+
+.action-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 50px;
+}
+
+.action-container .actions{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.action-container .actions button{
+    padding: 1rem 1.5rem;
+    margin-right: 15px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+}
+
+.btn-population{
+    background-color: var(--yellow);
+    color: var(--light);
+    transition: all 1s ease-in;
+}
+
+.btn-languages{
+    background-color: var(--dark);
+    color: var(--light);
+    transition: all 1s ease-in;
+}
+
+.btn-population:hover{
+    color: var(--yellow);
+    background-color: var(--light);
+}
+
+.btn-languages:hover{
+    color: var(--dark);
+    background-color: var(--light);
+}
+.action-container p{
+    margin-top: 5px;
+}
+
+/* pie chat */
+.pie-chart-container{
+    width:80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+}
+
+#myChart{
+    width: 50vw;
+    height: 40vw;
+}
+
+.popCol{
+    color:blue;
+    font-weight: bold;
+}
+
+@media (max-width:520px){
+    .pie-chart-container{
+        width:95%;
+        margin: 0 auto;
+        flex-direction: column;
+    }
+
+    #myChart{
+        width: 100vw;
+        height: 50vw;
+    }
+}
